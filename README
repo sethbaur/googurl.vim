@@ -1,0 +1,7 @@
+Google URL Shortener for Vim
+
+Usage (with cursor positioned on url):
+    <leader>gu
+
+To use with API key put the following line in your .vimrc:
+    let googurl_api_key = '<YOUR API KEY>'
