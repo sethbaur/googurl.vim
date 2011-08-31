@@ -19,7 +19,7 @@ def googurl():
     line = vim.current.line
     column = vim.current.window.cursor[1]
     row = vim.current.window.cursor[0]
-    matches = re.findall("(?:https?://)?(?:[\w]+\.)(?:\.?[\w]{2,})+", line)
+    matches = re.findall(r'(https?://[-?=/.\w]+)', line)
     api_url = 'https://www.googleapis.com/urlshortener/v1/url'
     url = ''
     if matches:
